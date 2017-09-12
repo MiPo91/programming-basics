@@ -24,7 +24,7 @@ namespace Task1
             } else {
                 Console.WriteLine("Number {0} equals 0", evaluatedNumber);
             }
-
+            
             // Wait for user input
             Console.ReadKey();
            
