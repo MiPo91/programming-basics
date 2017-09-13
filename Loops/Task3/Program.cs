@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Task2
+namespace Task3
 {
     class Program
     {
@@ -11,18 +11,25 @@ namespace Task2
             string numberGiven = Console.ReadLine();
             int convertedNumber;
             int.TryParse(numberGiven, out convertedNumber);
-            int calculatedResult = 0;
+            int even = 0;
+            int odd = 0;
 
             if (convertedNumber > 0)
             {
                 for (int i = 1; i <= convertedNumber; i++)
                 {
-
-                    calculatedResult = calculatedResult + i;
+                    if (i % 2 == 0)
+                    {
+                        even = even + i;
+                    }
+                    else
+                    {
+                        odd = odd + i;
+                    }
 
                 }
 
-                Console.WriteLine(calculatedResult);
+                Console.WriteLine("Parittomien summa = {0}, Parillisten summa = {1}", odd, even);
             }
             else
             {
