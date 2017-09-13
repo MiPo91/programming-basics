@@ -12,14 +12,10 @@ namespace Task3
             string toUpperStr = userInput.ToUpper(); // input to uppercase
             int stringLength = toUpperStr.Length; // string length for loop
 
-            string character = "L";
-            char[] stringArray = toUpperStr.ToCharArray(); // string to char array
-            char[] characterArray = character.ToCharArray(); // character to char array for easy comparisong
-
             int characterCount = 0;
 
             for (int i=0;i < stringLength;i++) {
-                if (stringArray[i] == characterArray[0]) { // comparing characters
+                if (toUpperStr[i] == 'L') { 
                     characterCount++;
                 }
             }
